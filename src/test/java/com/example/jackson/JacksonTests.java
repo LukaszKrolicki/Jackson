@@ -19,7 +19,7 @@ public class JacksonTests {
                 .build();
         String result = mapper.writeValueAsString(book);
 
-        assertThat(result).isEqualTo("{\"isbn\":\"978-0-06-112008-4\",\"title\":\"To Kill a Mockingbird\",\"author\":\"Harper Lee\",\"year\":\"1960\"}");
+        assertThat(result).isEqualTo("{\"foo\":\"bar\",,\"isbn\":\"978-0-06-112008-4\",\"title\":\"To Kill a Mockingbird\",\"author\":\"Harper Lee\",\"year\":\"1960\"}");
     }
 
     @Test
